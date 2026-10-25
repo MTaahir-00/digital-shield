@@ -1,32 +1,7 @@
 """
 DIGITAL SHIELD - MAIN APP
 ---------------------------
-Run: python digital_shield_app.py
 
-TWO LAYERS:
-  1) AUTOMATIC BACKGROUND SCREEN CHECK -> starts the moment the app opens,
-     no button press needed. A lightweight loop grabs the screen, skips
-     the (relatively expensive) OCR step entirely if the screen hasn't
-     visibly changed since the last check, OCRs it when it has, and scores
-     the text against risk_engine.py's phishing/scam/popup/gambling
-     patterns. "Check My Screen" still exists for an instant on-demand
-     check any time. No continuous webcam use, no paid API calls.
-  2) GESTURE / BUTTON RESPONSE -> if something suspicious is found, Digital
-     Shield shows a bilingual (English + Urdu) on-screen warning overlay
-     that floats on top of whatever the user is doing, speaks the Urdu
-     warning aloud, and offers three accessible responses (by hand gesture
-     OR by tapping a button, whichever is easier for the user):
-        ai_help     -> "Explain this to me" (screenshots + opens ChatGPT)
-        human_help  -> "Contact human help" (WhatsApp alert)
-        ignore      -> "Ignore / continue" (dismiss the warning) - detected
-                        two ways: the trained gesture model (once you've
-                        collected samples for it) AND a rule-based open
-                        flat-palm check (gesture_utils.is_open_palm) that
-                        works immediately with zero training data.
-
-The camera/gesture recognizer only needs to run while a warning is on
-screen (or if the user manually starts it to test gestures) - not all the
-time.
 """
 
 import io
