@@ -1,25 +1,7 @@
 """
 DIGITAL SHIELD - STEP 3: TEST THE TEXT DETECTION
 ---------------------------------------------------
-Run: python 3_test_detection.py
 
-This is how you know Layer 1 (screen/OCR risk detection) actually works.
-It is a RULE-BASED, CONTEXT-AWARE checker (scam behaviours + domains + email
-senders), not a trained ML model
-- so "training" it means adding a real phrase/pattern to risk_engine.py
-whenever a scam gets past it, or a safe message gets wrongly flagged.
-
-WORKFLOW WHEN YOU FIND A SCAM THE APP MISSED:
-  1. Copy the exact wording (or the OCR text from activity_history.log /
-     a screenshot in screenshots/) into TEST_CASES below as a new
-     ("risky", "<the text>", "why it's dangerous") entry.
-  2. Run this script - it will fail and tell you.
-  3. Add the missing phrase(s) to CATEGORIES in risk_engine.py.
-  4. Re-run this script until it passes. Now that scam type is covered
-     for good, and you have a regression test proving it stays covered.
-
-Do the same for anything SAFE that gets wrongly flagged (false positive) -
-add it as a ("safe", "<text>", ...) case.
 """
 
 from risk_engine import score_text
