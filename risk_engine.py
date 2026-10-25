@@ -1,52 +1,7 @@
 """
 DIGITAL SHIELD - RISK ENGINE (Layer 1 logic, no OCR/GUI/Windows deps)
 ----------------------------------------------------------------------
-Pure Python (standard library only) so it can be unit-tested anywhere -
-see 3_test_detection.py.
 
-WHAT CHANGED vs the old keyword matcher
-  The old engine flagged a page as soon as ONE scary word appeared
-  ("password", "otp", a "t.co" substring inside "microsof-t.co-m"...).
-  That is why normal sites, login pages and even a bank's own "never
-  share your OTP" message were flagged. This engine instead looks for
-  COMBINATIONS of scam behaviour, the same way a careful person would:
-
-    ASK       the message wants your password / OTP / PIN / CNIC / money /
-              remote access to your computer          (hard ask)
-              or "verify your account"-style wording  (soft ask)
-    PRESSURE  threats and deadlines ("account will be blocked", "final
-              notice", "legal action", "your SIM will be blocked")
-    LURE      prize / lottery / BISP-Ehsaas / job / loan / parcel bait
-    FAKE ALERT fake virus / tech-support / fake browser pop-ups
-    LINK      raw-IP links, shorteners, odd TLDs, hidden "@" links,
-              misspelled brand domains
-    IMPERSONATION  a web address or an email SENDER pretending to be a
-              real company (paypa1-secure.xyz, "PayPal" <x@gmail.com>,
-              microsoft.com.verify-login.xyz, nadra-verify.com ...)
-    GREETING / ATTACHMENT  "Dear customer", .exe/.zip/.html lures
-
-  Rules then decide (e.g. ASK + PRESSURE = scam, but ASK alone on a normal
-  login page = fine; a fake sender alone = scam).
-
-CONTEXT matters
-  detect_context() looks at the window title + text:
-    "trusted"  AI chats (ChatGPT, Claude...), code editors, wikis. These
-               discuss scams all day, so they are never flagged.
-    "email"    Gmail / Outlook / Yahoo ... Content is written by strangers,
-               so it is analysed fully (sender, links, wording). In an
-               INBOX LIST each row is judged on its own; an OPENED message
-               is judged as a whole.
-    "chat"     WhatsApp / Messenger / Telegram ... judged in small windows
-               of lines, so one scam message is caught without mixing in
-               unrelated chats.
-    "browser"  everything else.
-
-Every signal carries an English and an Urdu sentence, plus plain advice
-("Do not click any link...") in both languages, which the app shows on the
-warning overlay and speaks aloud.
-
-HOW TO IMPROVE IT: add real scam wording to the lists below, add the case
-to 3_test_detection.py, run it. See CHANGES.md.
 """
 
 import re
