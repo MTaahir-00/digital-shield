@@ -1,0 +1,72 @@
+[2026-10-25 21:02:25] Scan result: unknown (OCR error: tesseract is not installed or it's not in your PATH. See README file for more information.)
+[2026-10-25 21:02:42] Scan result: unknown (OCR error: tesseract is not installed or it's not in your PATH. See README file for more information.)
+[2026-10-25 21:02:54] Scan result: unknown (OCR error: tesseract is not installed or it's not in your PATH. See README file for more information.)
+[2026-10-25 21:02:55] Scan result: unknown (OCR error: tesseract is not installed or it's not in your PATH. See README file for more information.)
+[2026-10-25 21:02:56] Scan result: unknown (OCR error: tesseract is not installed or it's not in your PATH. See README file for more information.)
+[2026-10-25 21:03:41] Scan result: unknown (OCR error: tesseract is not installed or it's not in your PATH. See README file for more information.)
+[2026-10-25 21:03:42] Scan result: unknown (OCR error: tesseract is not installed or it's not in your PATH. See README file for more information.)
+[2026-10-25 21:03:42] Scan result: unknown (OCR error: tesseract is not installed or it's not in your PATH. See README file for more information.)
+[2026-10-25 21:03:42] Scan result: unknown (OCR error: tesseract is not installed or it's not in your PATH. See README file for more information.)
+[2026-10-25 21:10:52] Scan result: safe (no scam pattern found (weak signals: none))
+[2026-10-25 21:11:07] Automatic scan flagged risk: phishing [browser]: impersonation, ask_credentials, pressure, soft_ask, greeting | impersonation=paypa1-secure.xyz imitates paypal; ask_credentials=Enter your password; pressure=account will be suspended
+[2026-10-25 21:12:07] No response to the warning — dismissing automatically.
+[2026-10-25 21:12:14] Scan result: risky (phishing [browser]: impersonation | impersonation=paypal-secure.xyz imitates paypal)
+[2026-10-25 21:12:39] HUMAN HELP triggered.
+[2026-10-25 21:12:40] Screenshot used: screenshots\scan_20261025_211212.png
+[2026-10-25 21:12:40] Opening WhatsApp and attaching screenshot automatically...
+[2026-10-25 21:13:00] Human help WhatsApp alert sent with screenshot.
+[2026-10-25 21:13:25] Automatic scan flagged risk: phishing [browser]: impersonation, ask_credentials, pressure, soft_ask, greeting | impersonation=paypa1-secure.xyz imitates paypal; ask_credentials=Enter your password; pressure=account will be suspended
+[2026-10-25 21:13:35] IGNORE / CONTINUE selected.
+[2026-10-25 21:14:13] Automatic scan flagged risk: phishing [browser]: ask_credentials, pressure, greeting | ask_credentials=Enter your password; pressure=final notice; greeting=dear customer
+[2026-10-25 21:15:14] No response to the warning — dismissing automatically.
+[2026-10-25 21:15:20] Scan result: safe (no scam pattern found (weak signals: fake_alert))
+[2026-10-25 21:15:25] Automatic scan flagged risk: tech_support [browser]: fake_alert | fake_alert=call microsoft support
+[2026-10-25 21:15:46] AI HELP (Explain) triggered.
+[2026-10-25 21:15:46] Screenshot used: screenshots\auto_risk_20261025_211525.png
+[2026-10-25 21:15:46] Opening ChatGPT and pasting screenshot automatically...
+[2026-10-25 21:16:05] Screenshot pasted and prompt typed — review and press Enter to send.
+[2026-10-25 21:16:05] Once ChatGPT replies, tap the speaker/read-aloud icon under its response to hear it spoken in Urdu.
+[2026-10-25 21:49:14] Automatic scan flagged risk: lure [browser]: lure, pressure | lure=mubarak ho; pressure=final notice
+[2026-10-25 21:50:14] HUMAN HELP triggered.
+[2026-10-25 21:50:14] Screenshot used: screenshots\auto_risk_20261025_214914.png
+[2026-10-25 21:50:14] Opening WhatsApp and attaching screenshot automatically...
+[2026-10-25 21:50:34] Human help WhatsApp alert sent with screenshot.
+[2026-10-25 21:51:27] Automatic scan flagged risk: lure [browser]: lure, pressure | lure=bisp; pressure=final notice
+[2026-10-25 21:52:25] Automatic scan flagged risk: lure [browser]: lure, pressure | lure=bisp; pressure=final notice
+[2026-10-25 21:52:39] IGNORE / CONTINUE selected.
+[2026-10-25 21:55:09] Scan result: safe (no scam pattern found (weak signals: none))
+[2026-10-25 21:55:23] Automatic scan flagged risk: phishing [browser]: impersonation, ask_credentials, lure, pressure, soft_ask, greeting | impersonation=paypa1-secure.xyz imitates paypal; ask_credentials=Enter your password; lure=bisp
+[2026-10-25 21:56:23] No response to the warning — dismissing automatically.
+[2026-10-25 21:56:29] Scan result: risky (phishing [browser]: ask_credentials, lure, pressure, soft_ask, greeting | ask_credentials=Enter your password; lure=bisp; pressure=account will be suspended)
+[2026-10-25 21:56:41] HUMAN HELP triggered.
+[2026-10-25 21:56:41] Screenshot used: screenshots\scan_20261025_215628.png
+[2026-10-25 21:56:41] Opening WhatsApp and attaching screenshot automatically...
+[2026-10-25 21:57:01] Human help WhatsApp alert sent with screenshot.
+[2026-10-25 21:57:30] Automatic scan flagged risk: phishing [chat]: ask_credentials, pressure, soft_ask, greeting | ask_credentials=Enter your password; pressure=account will be suspended; soft_ask=verify your account
+[2026-10-25 21:57:37] IGNORE / CONTINUE selected.
+[2026-10-25 21:58:04] Scan result: safe (no scam pattern found (weak signals: lure))
+[2026-10-25 21:58:14] Scan result: safe (no scam pattern found (weak signals: lure))
+[2026-10-25 21:58:18] Automatic scan flagged risk: phishing [browser]: ask_credentials, lure | ask_credentials=Send your CNIC number; lure=bisp
+[2026-10-25 21:58:54] AI HELP (Explain) triggered.
+[2026-10-25 21:58:54] Screenshot used: screenshots\auto_risk_20261025_215817.png
+[2026-10-25 21:58:54] Opening ChatGPT and pasting screenshot automatically...
+[2026-10-25 21:59:13] Screenshot pasted and prompt typed — review and press Enter to send.
+[2026-10-25 21:59:13] Once ChatGPT replies, tap the speaker/read-aloud icon under its response to hear it spoken in Urdu.
+[2026-10-25 22:02:41] Automatic scan flagged risk: phishing [browser]: impersonation, ask_credentials, lure, pressure, soft_ask, greeting | impersonation=paypa1-secure.xyz imitates paypal; ask_credentials=Enter your password; lure=bisp
+[2026-10-25 22:10:08] Automatic scan flagged risk: lure [browser]: lure, pressure | lure=bisp; pressure=final notice
+[2026-10-25 22:10:13] IGNORE / CONTINUE selected.
+[2026-10-25 22:12:19] Automatic scan flagged risk: phishing [browser]: ask_credentials, lure | ask_credentials=Send your CNIC number; lure=bisp
+[2026-10-25 22:13:09] HUMAN HELP triggered.
+[2026-10-25 22:13:09] Screenshot used: screenshots\auto_risk_20261025_221219.png
+[2026-10-25 22:13:09] Opening WhatsApp and attaching screenshot automatically...
+[2026-10-25 22:13:29] Human help WhatsApp alert sent with screenshot.
+[2026-10-25 22:13:50] Automatic scan flagged risk: phishing [browser]: impersonation, ask_credentials, lure, pressure, soft_ask, greeting | impersonation=paypa1-secure.xyz imitates paypal; ask_credentials=Enter your password; lure=bisp
+[2026-10-25 22:14:50] No response to the warning — dismissing automatically.
+[2026-10-25 22:14:50] AI HELP (Explain) triggered.
+[2026-10-25 22:14:50] Screenshot used: screenshots\ai_help_20261025_221450.png
+[2026-10-25 22:14:50] Opening ChatGPT and pasting screenshot automatically...
+[2026-10-25 22:15:08] Screenshot pasted and prompt typed — review and press Enter to send.
+[2026-10-25 22:15:08] Once ChatGPT replies, tap the speaker/read-aloud icon under its response to hear it spoken in Urdu.
+[2026-10-25 22:16:08] Automatic scan flagged risk: phishing [browser]: ask_credentials, lure | ask_credentials=Send your CNIC number; lure=bisp
+[2026-10-25 22:16:17] IGNORE / CONTINUE selected.
+[2026-10-25 22:16:19] Automatic scan flagged risk: phishing [browser]: ask_credentials, lure | ask_credentials=Send your CNIC number; lure=bisp

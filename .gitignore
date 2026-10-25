@@ -1,0 +1,6 @@
+# private / personal - never commit
+config.json
+activity_history.log
+screenshots/
+__pycache__/
+*.pyc

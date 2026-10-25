@@ -1,0 +1,12 @@
+opencv-python
+mediapipe==0.10.14
+scikit-learn
+pandas
+numpy
+pyautogui
+pygetwindow
+Pillow
+pywin32
+pytesseract
+gTTS
+playsound==1.2.2
