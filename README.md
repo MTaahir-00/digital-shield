@@ -1,5 +1,7 @@
 # Digital Shield
 
+Team : 3 idiots (Muhammad Taahir 35618, Muhammad Mustafa 35647, Ibrahim Kashif 36821)
+
 **An accessible digital safety assistant for elderly and low-literacy users in Pakistan.**
 It watches the screen for scams and phishing, warns the user in **Urdu + English with a spoken voice**,
 and lets them get help with a simple **hand gesture** - no typing, no reading, no menus.
