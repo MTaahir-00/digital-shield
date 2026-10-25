@@ -10,25 +10,7 @@ Press 0/1/2/3 while holding each gesture steady. Press 'q' to quit.
   2 = human_help  (deliberate gesture -> contact human/cybersecurity help)
   3 = ignore      (deliberate gesture -> dismiss a warning / continue)
 
-NOTE: your existing gesture_data.csv already has neutral/ai_help/human_help
-samples from before, that data is still valid and does not need to be
-re-recorded. You only need to run this again to add 'ignore' samples
-(60-100+), then re-run 2_train_model.py. New rows are appended, so just
-run this script and press '3' a bunch of times while holding the ignore
-gesture; existing rows are left alone.
 
-NOTE 2: gesture_data.csv had ZERO 'ignore' rows, so digital_shield_model.pkl
-was trained without that class and can never predict it, no matter how
-long you hold the gesture - that's the bug where the palm gesture seemed
-to be "ignored". gesture_utils.is_open_palm() now covers this immediately
-with a rule-based (non-ML) check, so the app works without retraining.
-Recording real samples here and retraining is still worth doing later -
-it teaches the model your exact gesture/speed and makes recognition more
-robust than geometry alone, but it's optional now, not required.
-
-Record 60-100+ samples per gesture, varying angle/distance/lighting.
-For 'neutral', also include near-miss poses (resting fist on chin etc)
-to reduce false triggers, same lesson learned in the original project.
 """
 
 import cv2
