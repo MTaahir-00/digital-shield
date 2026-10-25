@@ -1,32 +1,7 @@
 """
 DIGITAL SHIELD - GESTURE HELPERS
 -----------------------------------
-normalize_landmarks()  -> feature vector fed into the trained RandomForest
-                           model (ai_help / human_help / neutral).
-is_open_palm()          -> a RULE-BASED (not ML) check for "all 5 fingers
-                           extended and spread". Used as an immediate,
-                           always-available fallback for the "ignore /
-                           continue" gesture.
 
-WHY THIS EXISTS: gesture_data.csv only ever had samples for
-neutral / ai_help / human_help - never for "ignore" (0 rows). That means
-digital_shield_model.pkl's classes_ literally does not include "ignore",
-so no amount of holding a flat palm up would ever be predicted as
-"ignore" - the model can't predict a class it was never shown. That is
-why it looked ignored / like it "wasn't working".
-
-Two ways to fix it, both included:
-  1. IMMEDIATE FIX (this file): a flat open palm is detected with simple
-     hand-landmark geometry, independent of the trained model. Works the
-     first time you run the app, no retraining needed.
-  2. PROPER FIX (optional, better long-term): run `python 1_collect_data.py`
-     and press '3' ~80-100 times while holding your actual "ignore"
-     gesture (varying angle/distance/lighting), then re-run
-     `python 2_train_model.py`. Once gesture_data.csv has real "ignore"
-     samples, the ML model will also learn your specific gesture, and
-     digital_shield_app.py will use the trained model as the primary
-     signal for ai_help/human_help/ignore while keeping the geometric
-     check as a safety net.
 """
 
 FINGER_TIPS = [8, 12, 16, 20]     # index, middle, ring, pinky tips
