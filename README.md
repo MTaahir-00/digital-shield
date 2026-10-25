@@ -58,4 +58,4 @@ only in an opened message's header. WhatsApp/ChatGPT automation depends on being
 Designed as a prototype safety aid, not a guarantee.
 
 ## Team
-[Team name] - [member names] - [IBA ERP IDs are entered in the submission form]
+[3 idiots] - [Muhammad Taahir, Muhammad Mustafa, Ibrahim Kashif] - [IBA ERP IDs are entered in the submission form]
